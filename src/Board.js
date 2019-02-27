@@ -121,7 +121,7 @@
     //
     // test if a specific major diagonal on this board contains a conflict
     hasMajorDiagonalConflictAt: function(majorDiagonalColumnIndexAtFirstRow) {
-      // console.log(majorDiagonalColumnIndexAtFirstRow);
+       // console.log(majorDiagonalColumnIndexAtFirstRow);
       if (majorDiagonalColumnIndexAtFirstRow < 0) {
         var column = 0;
         var row = Math.abs(majorDiagonalColumnIndexAtFirstRow);
@@ -163,7 +163,7 @@
       }
       let result = 0;
       for (row, column; row < this._currentAttributes.n && column >= 0; row++, column--){
-         console.log("row:", row, "column:", column);
+         // console.log("row:", row, "column:", column);
         if (this._currentAttributes[row][column] === 1) result++;
       }
       // console.log(result);
